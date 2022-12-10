@@ -4,17 +4,18 @@ html, body {
 }
 
 #header {
-    height: 30px;
+    height: 55px;
     width: 100%;
     background-color: #000000;
+    font-size: 40PX;
 }
 
 #header2 {
-    height: 400px;
+    height: 350px;
     width: 100%;
-    background-image : url('90075.jpg');
+    background-image : url('90075 - 복사본.jpg');
     background-repeat:no-repeat;
-    background-size : auto ;
+    background-size : 100%  100%;;
 }
 #contents {
     height: 500px;
@@ -25,6 +26,7 @@ html, body {
 #footer {
     height: 150px;
     width: 100%;
+    text-align:left;
     background-color: #000000;
 }
 
