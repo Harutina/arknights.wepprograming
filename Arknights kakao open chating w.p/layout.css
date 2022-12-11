@@ -11,14 +11,20 @@ html, body {
 }
 
 #header2 {
-    height: 350px;
+    height: 380px;
     width: 100%;
     background-image : url('90075 - 복사본.jpg');
     background-repeat:no-repeat;
     background-size : 100%  100%;;
 }
 #contents {
-    height: 500px;
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+}
+
+#contents2 {
+    height: 200px;
     width: 100%;
     background-color: #000000;
 }
