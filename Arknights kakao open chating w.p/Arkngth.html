@@ -159,7 +159,73 @@
                         <div class="panel2">
                             <button class="accordion3"style="margin-right: 20px; margin-top: 7px;"> ☆☆☆☆☆☆ </button>
                             <div class="panel3">
-                            <p style="color:#FFFFFF"> ▷ 추가 예정 ◁ </p> 
+                              <p href="#btnClick1" class="btn_open"  style="color:#ffffff; text-align:left; margin-top: 10px;"> ▷ 백파이프 </p>
+                              <p href="#btnClick2" class="btn_open"  style="color:#ffffff; text-align:left; margin-top: 10px;"> ▷ 사일라흐 </p>
+                              <p href="#btnClick3" class="btn_open"  style="color:#ffffff; text-align:left; margin-top: 10px;"> ▷ 플레임테일 </p>
+                              <p href="#btnClick4" class="btn_open"  style="color:#ffffff; text-align:left; margin-top: 10px;"> ▷ 비질 </p>
+                                <div id="btnClick1" class="pop_wrap" style="display:none;">
+                                  <div class="pop_inner">
+                                    <p style="color:#ffffff;"> ▷ 백파이프 </p>
+                                    <a> <img src="\elite requiremenets \6\char_222_bpipe_1.png" style="margin-right: 20px; height: 550px; width: 500px; "> 
+                                      <img src="\elite requiremenets \6\char_222_bpipe_2.png" style="margin-right: 20px; height: 550px; width: 500px; "> </a>
+                                    <button class="btn_close">닫기</button>
+                                  </div>
+                                </div>
+                                <div id="btnClick2" class="pop_wrap" style="display:none;">
+                                  <div class="pop_inner">
+                                    <p style="color:#ffffff;"> ▷ 사일라흐 </p>
+                                    <a> <img src="\elite requiremenets \6\char_479_sleach_1.png" style="margin-right: 20px; height: 550px; width: 500px; "> 
+                                      <img src="\elite requiremenets \6\char_479_sleach_2.png" style="margin-right: 20px; height: 550px; width: 500px; "> </a>
+                                    <button class="btn_close">닫기</button>
+                                  </div>
+                                </div>
+                                <div id="btnClick3" class="pop_wrap" style="display:none;">
+                                  <div class="pop_inner">
+                                    <p style="color:#ffffff;"> ▷ 플레임테일 </p>
+                                    <a> <img src="\elite requiremenets \6\char_420_flamtl_1.png" style="margin-right: 20px; height: 550px; width: 500px; "> 
+                                      <img src="\elite requiremenets \6\char_420_flamtl_2.png" style="margin-right: 20px; height: 550px; width: 500px; "> </a>
+                                    <button class="btn_close">닫기</button>
+                                  </div>
+                                </div>
+                                <div id="btnClick4" class="pop_wrap" style="display:none;">
+                                  <div class="pop_inner">
+                                    <p style="color:#ffffff;"> ▷ 비질 </p>
+                                    <a> <img src="\elite requiremenets \6\char_427_vigil_1.png" style="margin-right: 20px; height: 550px; width: 500px; "> 
+                                      <img src="\elite requiremenets \6\char_427_vigil_2.png" style="margin-right: 20px; height: 550px; width: 500px; "> </a>
+                                    <button class="btn_close">닫기</button>
+                                  </div>
+                                </div>
+
+
+                                <script>
+                                  var target = document.querySelectorAll('.btn_open');
+                                  var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
+                                  var targetID;
+
+                                  // 팝업 열기
+                                  for(var i = 0; i < target.length; i++){
+                                    target[i].addEventListener('click', function(){
+                                      targetID = this.getAttribute('href');
+                                      document.querySelector(targetID).style.display = 'block';
+                                    });
+                                  }
+                                  // 팝업 닫기
+                                  for(var j = 0; j < target.length; j++){
+                                    btnPopClose[j].addEventListener('click', function(){
+                                      this.parentNode.parentNode.style.display = 'none'});
+                                  }
+                                </script>
+
+
+
+
+
+
+
+
+
+
+
                             </div>
                             <button class="accordion3"style="margin-right: 20px; margin-top: 7px;"> ☆☆☆☆☆ </button>
                             <div class="panel3">
@@ -429,6 +495,7 @@
             <p style="color:#FFFFFF"> &nbsp;&nbsp; ▷ !!시간이 지나면 브금이 켜집니다. </p>
             <p style="color:#FFFFFF"> &nbsp;&nbsp; ▷ pc기준 전체화면으로 봐주시기 바랍니다. </p>
             <p style="color:#FFFFFF"> &nbsp;&nbsp; ▷ panel이 안 보일 경우 스크롤을 내리거나 위 패널만 닫고 다시 열어주시기 바랍니다. </p>
+            <p style="color:#FFFFFF"> &nbsp;&nbsp; ▷ 출처: 명일방주 공식 일러스트 사용 </p>
             <p style="color:#FFFFFF"> &nbsp;&nbsp; ▷ 이 홈페이지는 대학과제를 위해 만들어진 페이지 입니다. (과제용)</p>
 
             <audio autoplay src="명일방주 트레일러 브금.mp3" loop > </audio>
