@@ -1,8 +1,13 @@
 html, body {
     margin: 0;
-    padding: 0;
+    padding: 0px;
+    background-color: #000000;
 }
 
+body::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none;
+}
 #header {
     height: 55px;
     width: 100%;
@@ -11,9 +16,9 @@ html, body {
 }
 
 #header2 {
-    height: 380px;
+    height: 500px;
     width: 100%;
-    background-image : url('90075 - 복사본.jpg');
+    background-image : url('10002.webp');
     background-repeat:no-repeat;
     background-size : 100%  100%;;
 }
